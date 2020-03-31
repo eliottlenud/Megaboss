@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Megaboss</string>
+    <string name="button1">Créer un salon</string>
+    <string name="button2">Rejoindre un salon</string>
+    <string name="button3">?</string>
+    <string name="lettre">E</string>
+</resources>
