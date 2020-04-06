@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
-        android:layout_marginTop="317dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="121dp"
         android:gravity="center"
         android:orientation="vertical"
@@ -18,10 +18,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Votre pseudo"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:gravity="center"></TextView>
+
+        <EditText
+            android:id="@+id/elpseudo"
+            android:layout_width="350dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/pseudo"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:text="Valider"
+            android:textSize="20dp"
+            />
+
         <Button
             android:id="@+id/creerSalon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
             android:text="@string/button1"
             tools:layout_editor_absoluteX="136dp"
             tools:layout_editor_absoluteY="322dp" android:textSize="25sp"/>
@@ -33,9 +60,6 @@
             android:layout_height="wrap_content"
             android:text="@string/button2" android:textSize="20sp"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
 
 
     </LinearLayout>
