@@ -1,4 +1,4 @@
-package io.hei.megaboss;
+package io.hei.megaboss.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import java.util.Random;
+import io.hei.megaboss.R;
+import io.hei.megaboss.model.Salon;
 
 public class MainActivity extends AppCompatActivity {
 
