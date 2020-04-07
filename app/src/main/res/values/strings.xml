@@ -4,4 +4,7 @@
     <string name="button2">Rejoindre un salon</string>
     <string name="button3">?</string>
     <string name="lettre">E</string>
+    <string name="texte">Envoie ton texte ici :</string>
+    <string name="app_id">C4135DEE</string>
+    <string name="media_route_menu_title">Coucou</string>
 </resources>
