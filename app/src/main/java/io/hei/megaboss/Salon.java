@@ -11,8 +11,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.google.android.gms.cast.framework.CastButtonFactory;
-import com.google.android.gms.cast.framework.CastContext;
+//import com.google.android.gms.cast.framework.CastButtonFactory;
+//import com.google.android.gms.cast.framework.CastContext;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -30,12 +30,12 @@ public class Salon extends AppCompatActivity {
     private static BufferedReader br;
     String message = "e";
     private static String ip = "54.37.121.232";
-    private CastContext mCastContext;
+    //private CastContext mCastContext;
     private MenuItem mediaRouteMenuItem;
     private Toolbar mToolbar;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+   /* @Override
+    *//*protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.salon);
         e = findViewById(R.id.e);
@@ -56,7 +56,7 @@ public class Salon extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.browse, menu);
         mediaRouteMenuItem = CastButtonFactory.setUpMediaRouteButton(getApplicationContext(), menu, R.id.media_route_menu_item);
         return true;
-    }
+    }*/
 
     public void send_text(View v){
         myTask mt = new myTask();
@@ -85,10 +85,10 @@ public class Salon extends AppCompatActivity {
         }
     }
 
-    private void setupActionBar() {
+   /* private void setupActionBar() {
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         mToolbar.setTitle(R.string.app_name);
         setSupportActionBar(mToolbar);
-    }
+    }*/
 }
 

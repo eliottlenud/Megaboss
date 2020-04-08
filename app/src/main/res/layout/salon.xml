@@ -5,33 +5,40 @@
     android:layout_height="match_parent"
     android:background="@color/gris">
 
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="205dp"
+        android:layout_height="309dp"
+        android:background="@android:color/holo_blue_dark" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="94dp"
-        android:layout_marginTop="175dp"
-        android:layout_marginEnd="95dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="206dp"
+        android:layout_height="309dp"
+        android:layout_alignBottom="@+id/button6"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/button6"
+        android:background="@android:color/holo_red_dark" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/texte"
-            android:textSize="25sp"
-            android:textColor="@color/grisfonce"/>
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="205dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/button6"
+        android:layout_alignEnd="@+id/button6"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@android:color/holo_green_dark" />
 
-        <Button
-            android:id="@+id/e"
-            android:text="@string/lettre"
-            android:textSize="25sp"
-            android:layout_width="270dp"
-            android:layout_height="60dp"
-            android:textColor="@color/gris"
-            android:background="@drawable/boutton"/>
-    </LinearLayout>
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="217dp"
+        android:layout_height="452dp"
+        android:layout_below="@+id/button6"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/button6"
+        android:background="@android:color/holo_orange_light" />
+
 </RelativeLayout>
