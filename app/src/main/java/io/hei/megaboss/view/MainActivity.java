@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected  void onPreExecute (){
-            pseudoecris.setText("Please wait inserting data");
+            pseudoecris.setText("On va mettre le pseudo");
         }
 
         @Override
