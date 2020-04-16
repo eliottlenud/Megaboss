@@ -42,6 +42,7 @@
             android:id="@+id/pseudo"
             android:layout_marginTop="15dp"
             android:text="Valider"
+            android:onClick="ConnectButton"
             android:textColor="@color/gris"
             android:textSize="25sp"
 
