@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     String Pseudo;
     EditText pseudoecris;
 
+    // creation des variables pour la connection à la bdd
     private static final String DB_URL = "jdbc:mysql://54.37.121.232/hjhhfdedb";
     private static final String USER = "hjhhfdedb";
     private static final String PASS = "hbWP7jLhtf2GhW4";
@@ -71,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    // envoyer des données dans la BDD
+    // envoyer des données dans la BDD lors du clic sur le boutton
 
     public void ConnectButton(View view){
         Send objSend = new  Send();
@@ -91,12 +92,14 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected  String doInBackground(String... strings){
             try {
+                // connection à la BDD
                 Class.forName("com.mysql.jdbc.Driver");
                 Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
                 if (conn ==null){
                     msg= "connection goes wrong";
                 } else {
-                    String query = "ISERT INTO joueur (pseudo) VALUES('"+text+"') ";
+                    // insérer le pseudo dans la table jouer et la colonne pseudo
+                    String query = "INSERT INTO joueur (pseudo) VALUES('"+text+"') ";
                     Statement stmt = conn.createStatement();
                     stmt.executeUpdate(query);
                     msg= "pseudo inséré";
@@ -116,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
             pseudoecris.setText(msg);
         }
     }
-
+    // insérer le pseudo dans la variable Pseudo
     public void SetPseudo(View v){
         Pseudo = pseudoecris.getText().toString();
         Log.v("la valeur du pseudo est",Pseudo);
